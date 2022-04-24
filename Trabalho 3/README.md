@@ -46,7 +46,7 @@ No algoritmo desenvolvido cada página possui um inteiro ID (para identificá-la
 
 * _colocaNaReal()_: insere uma página na memória física. Primeiramente busca-se qual a página menos referenciada na memória real (em um laço utiliza-se a função _conversorBinarioDecimal()_ e salva-se o resultado em um vetor auxiliar. Quando acaba de percorrer a memória física, basta verificar em qual posição desse vetor auxiliar está o menor valor e é nessa posição da memória real que está a página menos referenciada). Posteriormente busca-se um ID que não está presente nessa memória e procura-se esse ID na memória virtual. As referências da página menos referenciada são zeradas, tira da memória swap o ID que vai entrar na memória física e insere na swap a página que vai sair da memória física. É realizada uma referência nessa nova página inserida;
 
-* _inicializaSwp()_: inicializa a memória swap;
+* _inicializaSwap()_: inicializa a memória swap;
 
 * _imprimeReferenciasNaMemoria()_: imprime o vetor _"ultimasRefs"_ de todas as páginas na memória física; 
 
